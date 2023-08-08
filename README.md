@@ -1,8 +1,8 @@
 # WindowsEventLogEDU
 
-Project to demonstrate how to write into the WIndows Event Log.
+Project to demonstrate how to write into the WIndows EventLog.
 
-## Event Log Writer class
+## EventLog Writer class
 
 ```csharp
 public static class EventLogWriter
@@ -17,7 +17,7 @@ public static class EventLogWriter
     /// <param name="message">message to be written as log entry</param>
     /// <param name="eventLogEntryType">overwrites the default type of Information to a custom set type</param>
     /// <param name="sourceName">Overwrites the default ".NET Runtime". Custom values have to exist, or this throws an exception.</param>
-    /// <param name="eventId">Overwrites the default id of 1026 to a custom id. keeping the default is recommended, else chose an id above 1000</param>
+    /// <param name="eventId">Overwrites the default id of 1026 to a custom id. Keeping the default is recommended, else chose an id above 1000</param>
     public static void WriteApplicationEventEntry(
         string message,
         EventLogEntryType eventLogEntryType = EventLogEntryType.Information,
